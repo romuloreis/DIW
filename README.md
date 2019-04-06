@@ -1,5 +1,6 @@
 # DIW
 
+Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
 
 ## Lista de Material
 
