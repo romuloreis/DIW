@@ -1,4 +1,4 @@
-# DIW
+# Material de apoio e atividades da cadeira de desenvolvimento de interfaces web (DIW)
 
 Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
 
