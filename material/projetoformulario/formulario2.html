@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Segundo Fomulário</title>
+	</head>
+	<body>
+		<h1>Segundo Formulário</h1>
+
+		<form action="envio.html" method="get">
+			<fieldset>
+				<legend>Outros Dados</legend>
+
+				<!--Por questões de acessibilidade, atribuimos um rótulo (label) à um campo. O atributo for do label tem que apontar para o atributo id do campo correspondente-->
+				<label for="nomecompleto">Nome:</label>
+				<br>
+
+				<input type="text" name="nome" id="nomecompleto" placeholder="Digite seu nome completo">
+				<br>
+				<br>
+
+				<!--Campo com validação de sintaxe para e-mail-->
+				<label for="email">E-mail:</label><br>
+
+				<input type="email" name="email" id="email" required>
+				<br><br>
+
+				<!--Campo com validação de sintaxe para url-->
+				<label for="site">Site pessoal:</label>
+				<br>
+				<input type="url" name="site_pessoal" id="site">
+				<br><br>
+
+				<!--Tipo NUMBER permite selecionar um número de X até Y, sendo X definido pelo atributo min e Y definido pelo atributo max-->
+				<label for="quant">Quantidade: </label><br>
+
+				<input type="number" name="quantidade" min="1" max="5" id="quant">
+				<br><br>
+
+				<!--Tipo RANGE permite selecionar um número de X até Y, sendo X definido pelo atributo min e Y definido pelo atributo max-->
+				<label for="pontos">Pontuação: </label><br>
+
+				<input type="range" name="pontuacao" min="1" max="50" id="pontos">
+				<br><br>
+
+				<!--Tipo COLOR permite selecionar umA COR -->
+				<label for="cor">Sua cor favorita: </label><br>
+
+				<input type="color" name="minha_cor" id="cor">
+				<br><br>
+
+
+				<br><br>
+				<input type="submit" value="Enviar">
+
+			</fieldset>
+		</form>
+	</body>
+</html>

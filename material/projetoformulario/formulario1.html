@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Primeiro Formulário</title>
+	</head>
+	<body>
+		
+		<h1>Página Primeiro Formulário</h1>
+
+		<!-- Criando um formulário, que chama a 
+			página envio.html, passando os valores do formulário pelo método GET (dados mostrados na URL)-->
+		<form action="envio.html" method="get">
+
+			<!-- Agrupa dados/campos relacionados em um formulário -->
+			<fieldset>
+				<!-- Cria uma legenda/título para o agrupamento/fieldset -->
+				<legend>Dados Pessoais</legend>
+
+				Nome:<br>
+				<!-- Campo de entrada de dados 
+				do tipo texto-->
+				<input type="text" name="nome">
+				<br>
+				Sobrenome:
+				<br>
+				<!-- Campo de entrada de dados 
+				do tipo texto-->
+				<input type="text" name="sobrenome"><br><br>
+				<!-- Campo de entrada de dados 
+				do tipo RADIO, permite selecionar apenas um valor. 
+				Ao enviar os dados do formulário para o servidor, será passado que o atributo NAME recebeu o valor de VALEU. exemplo: genero="masc"-->
+				<input type="radio" name="genero" value="masc" checked>Masculino<br>
+
+				<input type="radio" name="genero" value="fem">Feminino<br>
+
+				<input type="radio" name="genero" value="outro">Outro<br>
+
+				<!--Cria um campo do tipo botão de submissão/envio de formulário-->
+				<input type="submit" value="Enviar">
+
+			</fieldset>
+			<br><br>
+
+			Escreva sobre você:
+			<br>
+			<!-- Cria um campo de entrada de texto. O tamanho da área de texto é definido pelo número de colunas (cols) e linhas (rows), mas o número máximo de caracteres é definido pelo atributo maxlength-->
+
+			<textarea name="sobre_vc" cols="40" rows="5" maxlength="50"></textarea>
+
+			<br>
+
+			Selecione as línguas:<br>
+			<!-- Crtiando um checkbox -->
+			<input type="checkbox" name="ingles" value="1">
+			Inglês
+			<br>
+
+			<input type="checkbox" name="frances" value="2">
+			Francês
+			<br>
+			<br>
+
+
+			Estado:<br>
+
+			<!-- Lista de seleção - permite selecionar, apenas um Item -->
+			<select name="estado">
+				<option value="1">RS</option>
+				<option value="2">SC</option>
+				<option value="3">PR</option>
+				<option value="4">SP</option>
+			</select>
+
+
+			<br><br>Cidade e bairro:<br>
+			<!-- Seleção que permite selecionar um valor de um grupo -->
+			<select name="endereco">
+				<!-- Cria uma subdivição/grupo -->
+				<optgroup label="Porto Alegre">
+					<option value="cb">Cicade Baixa</option>
+					<option value="ct">Centro</option>
+				</optgroup>
+				<optgroup label="São Paulo">
+					<option value="mb">Morunbi</option>
+					<option value="lb">Liberdade</option>
+				</optgroup>
+			</select>
+
+
+		</form>
+
+	</body>
+</html>
